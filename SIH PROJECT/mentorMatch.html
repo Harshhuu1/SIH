@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Match</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lato:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./mentorMatch.css">
+</head>
+<body>
+       <div class="center" id="match-visual">
+        <h2 id="finding-text">Finding your perfect mentor match...</h2>
+        <!-- Bouncing Balls -->
+        <div class="ball-container">
+            <div class="ball" id="ball1"></div>
+            <div class="ball" id="ball2"></div>
+            <div class="ball" id="ball3"></div>
+        </div>
+    </div>
+
+    <!-- Mentor Card that will appear after matchmaking -->
+    <div id="mentor-card-container" class="hidden">
+        <div class="mentor-card">
+            <img src="mentor1.jpg" alt="Mentor 1" class="mentor-photo">
+            <div class="mentor-info">
+                <h3>John Doe</h3>
+                <p>Expert in Data Science & AI</p>
+                <p>Why this mentor matches with you: Your interests in AI align with their expertise, plus their experience in career transitions makes them a perfect match for your current needs.</p>
+                <div class="mentor-details">
+                    <p><strong>Email:</strong> john.doe@example.com</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com">View Profile</a></p>
+                </div>
+                <button class="message-btn">Send a Message</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+    // Simulate the mentor matching process
+    setTimeout(function() {
+        // Remove the initial "Finding match" text and bouncing balls
+        document.getElementById('match-visual').classList.add('hidden');
+        
+        // Show the mentor card
+        document.getElementById('mentor-card-container').classList.remove('hidden');
+    }, 3000); // 5 seconds to simulate matchmaking process
+};
+    </script>
+</body>
+</html>

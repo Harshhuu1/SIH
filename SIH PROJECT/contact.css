@@ -1,0 +1,1482 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Spartan", sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+h4{
+    font-size: 20px;
+    
+    color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0px 20px 0px;
+}
+.section_p1{
+    padding: 40px 80px;
+    display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+.section_p2{
+    padding: 40px 80px;}
+.section_m1{
+    margin: 40px 0px;
+
+}
+
+
+/* nav bar */
+header{
+    display: flex;
+    width: 100vw;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0px 5px 15px rgb(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 100%;
+
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+
+
+}
+#close{
+    display: none;
+}
+
+.navbar li{
+    list-style: none;
+   padding: 0px 20px;
+   position: relative;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 555;
+    color: #1a1a1a;
+    transition: all 0.3s ease-in;
+} 
+.navbar li a:hover,
+.navbar li a.active{
+    color: #088178;
+
+}
+.navbar li a.active::after,
+.navbar li a:hover::after{
+content: "";
+width: 40px;
+height: 3px;
+position: absolute;
+bottom: -4px;
+left: 20px;
+background-color: #088178;
+border-radius: 5px;
+
+}
+/* nav bar end */
+/* Home section starts */
+.hero{
+    background: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/hero4.png);
+    height: 90vh;
+    width:100vw ;
+    background-position: top 25% right 0%;
+    background-size: cover;
+padding: 0 80px;
+display: flex;
+align-items: flex-start;
+flex-direction: column;
+justify-content: center;
+}
+.hero h4{
+    padding-bottom: 15px;
+
+}
+.hero h1{
+    color: #088178;
+}
+.hero button{
+    background-image: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/button.png);
+    background-color: transparent;
+    padding: 14px 80px 14px 65px;
+    border: 0;
+    color: #088178;
+    font-size: 15px;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    cursor: pointer;
+ 
+
+}
+
+/* home section ends */
+/* 
+feature box starts */
+.feturebox{
+
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 2px 34px rgb(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0px;
+    }
+    .feturebox:hover{
+        box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+    }
+    .feturebox h6{
+        display: inline-block;
+        padding: 9px 8px 6px 8px;
+        line-height:1;
+        border-radius: 4px;
+        background-color:#fddde4;
+        color: #088178;
+
+    }
+    .feturebox img{
+        width: 100%;
+        margin-bottom:10px ;
+    }
+    .feturebox:nth-child(2) h6{
+        background-color: #cdebbc;
+    }
+    .feturebox:nth-child(3) h6{
+        background-color:#d1e8f2;
+    }
+    .feturebox:nth-child(4) h6{
+        background-color: #cdd4f8;
+    }
+    .feturebox:nth-child(5) h6{
+        background-color: #f6dbf6;
+    }
+    .feturebox:nth-child(6) h6{
+        background-color: #fff2e5;
+    }
+/* feature box ends */
+
+
+/* featured product starts*/
+#products{
+    text-align: center;
+}
+.pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0,0, 0,0.02);
+    margin: 15px 0px;
+    transition: all 0.3 ease;
+}
+.pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0, 0,0.06);
+
+}
+.pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+.pro .des{
+    text-align: start;
+    padding: 10px 0px;
+}
+ .pro span{
+    color: #606063;
+    font-size: 12px;
+    font-weight: 550;
+
+}
+.pro h5{
+    color: #1a1a1a;
+    padding: 4px;
+    font-size: 14px;
+
+}
+.pro  .star i{
+    font-size: 12px;
+    color: rgb(243, 143,25 );
+}
+.pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+
+}
+.pro {
+    position: relative; /* Ensure the container is positioned */
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0px;
+    transition: all 0.3s ease;
+    text-align: center; /* Center the content horizontally */
+    overflow: hidden; /* Ensure content does not overflow */
+    position: relative;
+    /* Ensure positioning context for absolutely positioned children */
+}
+.pro  .f2{
+    position: absolute; /* Position the shopping cart icon absolutely */
+    top: 87%; /* Move the top of the icon to the middle of the container */
+    right: 10px; /* Adjust right position as needed */
+     /* Center the icon vertically */
+    display: inline-block;
+    background-color: #e8f6ea;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 500;
+    color: #088178;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+.pro a:hover {
+    background-color: #cce7d0;
+}
+
+.pro a .fas {
+    vertical-align: middle; /* Align icon vertically */
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/*featured product ends */
+/*banner starts*/
+.banner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   width: 100%;
+   height: 40vh;
+   background-size: cover;
+   background-position: center;
+    background-image: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/banner/b2.jpg);
+}
+.banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+.banner h2{
+    color: #fff;
+    padding: 10px 0;
+    font-size: 30px;
+
+}
+.banner h2 span{
+    color: red;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    columns: #000;
+    background-color:#088178;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s ease;
+}
+button.normal:hover{
+    background-color: #07524d;
+    color: #fff;
+    
+}
+.sm_banner .first{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   width: 620px;
+   height: 50vh;
+   background-size: cover;
+   background-position: center;
+    background-image: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/banner/b17.jpg);
+    padding: 30px;
+}
+.sm_banner h4{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 300;
+    font-weight: 550;
+    padding-top: 15px;
+    line-height: 20px;
+}
+.sm_banner h2{
+    font-size: 40px;
+    color: #088178;
+    font-weight: 800;
+}
+.sm_banner  .p{
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.one{
+    color: red;
+} 
+.sm_banner .normal{
+    border:  1px solid  #FFF;
+    background: transparent;
+    border-radius: 1px;
+    padding: 11px 18px;
+    color: #fff;
+    transition: 0.2s;
+}
+.sm_banner:hover button{
+    background:#088178;
+    border: 1px solid #088178;
+}
+ .sm_banner .second{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+       width: 620px;
+       height: 50vh;
+       background-size: cover;
+       background-position: center;
+        background-image: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/banner/b10.jpg);
+        padding: 30px;
+}
+.sm_banner  .p{
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 500;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.banner3 .first{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+   min-width: 30%;
+   height: 30vh;
+   background-size: cover;
+   background-position: center;
+    background-image: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/blog/b7.jpg);
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
+.banner3 h2{
+color: #fff;
+font-weight: 900;
+font-size: 22px;
+}
+.banner3 h3{
+    color: #e57a7a;
+    font-weight: 800;
+    font-size: 18px;
+    }
+.banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0px 80px;
+}
+.banner3 .two{
+    background-image:url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/banner/b4.jpg);
+}
+.banner3 .three{
+    background-image:url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/banner/b18.jpg) ;
+}
+#NEWS{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+   /* background-repeat: no-repeat; */
+   background-position: 20% 30%;
+   background-color: #041e42;
+    background-image: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/about/banner.png);
+}
+#NEWS h2{
+    font-size: 22px;
+    color: #FFF;
+    font-weight: 700;
+
+}
+#NEWS p{
+    font-size: 14px;
+    color: #818ea0;
+    font-weight: 600;
+}
+#NEWS span{
+    color: #ffbd27;
+}
+  #NEWS input{
+    width: 3.125rem;
+    padding: 1.25em 1.25em;
+    font-size: 14px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+#NEWS .normal{
+    gap: 10px;
+        border:  1px solid  #FFF;
+        background: transparent;
+        border-radius: 1px;
+        padding: 11px 18px;
+        color: #fff;
+        
+        transition: 0.2s;
+        border-radius: 4px;
+    }
+    .normal:hover button{
+        background:#088178;
+        border: 1px solid #088178;
+    
+    }
+    .inputbox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 40%
+        
+    }
+    #NEWS .inputbox button {
+        background-color: #088178;
+        color: white;
+        padding: 7.6px 20px;
+        border: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0; /* Example: Make text uppercase */
+    }
+    
+    /* Hover effect for button */
+    #NEWS .inputbox button:hover {
+        background-color: #065a4f;
+    }
+    
+
+
+/*banner ends*/
+/* footer starts header */
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    color: #000;
+    
+
+}
+
+
+.col .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 14px;
+    color: #000;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #222;
+    text-decoration: none;
+}
+.follow{
+    margin-top: 20px;
+}
+.follow i{
+    color: #222;
+    cursor: pointer;
+    padding-right: 4px;
+}
+.row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+    margin: 10px 0 15px 0;
+}
+footer i:hover{
+    color: #088178;
+}
+
+footer a:hover{
+    color: #088178;
+}
+footer .foot{
+    width: 100%;
+    text-align: center;
+}
+.ham{
+    display: none;
+    align-items: center;
+}
+
+
+/* footer ennds here */
+/* start media query */
+@media (max-width:820px) {
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -350px;
+        height: 100vh;
+        width: 300px;
+        background-color: #e3e6f3;
+        box-shadow: 0 40px 60px rgb(0,0,0,0.1);
+        padding: 80px 0 0 10px;
+        transition: 0.3s;
+
+    
+    
+    }
+     .active{
+        right: 0px;
+    }
+    .navbar li{
+
+        margin-bottom: 25px;
+    }
+    .ham{
+        display: flex;
+        align-items: center;
+    }
+    .ham i{
+        color: #1a1a1a;
+        padding-left:20px ;
+        font-size: 20px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        
+        color: #222;
+        font-size: 24px;
+    }
+    #bag{
+        display: none;
+    }
+    .hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    .section_p1 {
+        
+        justify-content: center;
+      
+    }
+    .pro {
+       
+     margin: 15px 15px;
+      
+       
+    }
+    .banner {
+        
+        height: 20vh;
+      
+    }
+    .sm_banner .first {
+       
+        width: 100%;
+        height: 30vh;
+       
+        
+    }
+    .sm_banner .second {
+       
+        width: 100%;
+        height: 30vh;
+       
+        
+    }
+    .banner3{
+        padding: 0 40px;
+    }
+    .banner3 .first {
+       
+        width: 28%;
+       
+    }
+    .banner3 .two {
+       
+        width: 28%;}
+        .banner3 .three {
+       
+            width: 28%;}
+            #NEWS .input {
+             width:70%
+            }
+           
+        
+       
+    
+}
+   @media (max-width:415px) {
+    header{
+        padding: 10px 30px;
+    }
+    .section_p1{
+        padding: 20px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    
+    h2{
+        font-size: 32px;
+    }
+    .hero{
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature .feturebox{
+        width: 150px;
+      padding: 0 0 15px 0;
+      
+     
+    }
+    #feature{
+        justify-content: space-between;
+        gap: 1rem;
+    }
+     
+    .banner {
+      
+        height: 40vh;
+    }
+    .first{
+        margin-top: 20px;
+        height: 50vh;
+    }
+    #NEWS input {
+        width: 8rem;
+        
+    
+    }
+    #blog .box{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #blog{
+        padding: 100px 20px 0 20px;
+    }
+
+    #about1 {
+        flex-direction: column;
+
+    }
+    .about1 .right{
+        height: 50%;
+    }
+    
+}
+    
+
+   
+
+
+
+
+/* ends media query */
+
+/*shop page starts*/
+.hero1{
+    background: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/banner/b1.jpg);
+    height: 40dvh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    flex-direction: column;
+}
+.hero1 h2, p{
+    color: #fff;
+
+    font-family: "Bebas Neue", sans-serif;
+}
+.hero1 p{
+    font-family: "Anton SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.hero1 span{
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #73a2e4;
+}
+.slider {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.slider a {
+    text-decoration: none;
+    background-color: #088178;
+    padding: 10px 20px;
+    margin: 0 5px; /* Adjust margin between links */
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.slider a:hover {
+    background-color: #065b4c; /* Darker shade for hover effect */
+}
+
+.slider i {
+    font-size: 16px;
+    margin-left: 5px; /* Adjust icon spacing */
+}
+
+/* Styling Enhancements */
+
+/* Styling Enhancements */
+
+/* Container for the product display */
+/* Additional Styling for Improved Look */
+
+/* Container for the product display */
+/* Container for the product display */
+#prodd {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px; /* Add gap between flex items */
+}
+
+/* Main image of the product */
+.mainimg {
+    width: 100%;
+    border-radius: 8px; /* Rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+/* Left container (main image and small images) */
+.left {
+    width: 50%;
+    margin-right: 20px;
+}
+
+/* Small images container */
+.smallimg {
+    display: flex;
+    gap: 10px;
+    padding-top: 10px; /* Increased padding */
+    justify-content: flex-start; /* Align items to the start */
+}
+
+/* Styling for each small image */
+.smallcol {
+    cursor: pointer;
+    border: 1px solid #eee; /* Light border around small images */
+    border-radius: 4px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow content */
+}
+
+/* Details container (right side) */
+.detailss {
+    width: 50%;
+    padding: 20px; /* Increased padding */
+    border: 1px solid #eee; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #f9f9f9; /* Light background color */
+    position: relative; /* Ensure relative positioning */
+    top: -60px; /* Adjust vertical position */
+}
+
+/* Product title */
+.detailss h4 {
+    margin-top: 0;
+    font-size: 24px; /* Larger font size */
+    font-weight: 600; /* Bold font weight */
+    color: #333; /* Darker text color */
+    padding-bottom: 10px; /* Add padding for spacing */
+    border-bottom: 1px solid #eee; /* Bottom border */
+}
+
+/* Product price */
+.detailss h2 {
+    font-size: 28px; /* Larger font size */
+    font-weight: 700; /* Bold font weight */
+    color: #088178; /* Accent color */
+    margin-bottom: 20px; /* Increased bottom margin */
+}
+
+/* Select dropdown and input fields */
+.detailss select,
+.detailss input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* White background */
+    font-size: 16px;
+}
+
+/* Button styling */
+button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #088178;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #065b4c; /* Darker shade on hover */
+}
+
+/* Product description */
+.detailss span {
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Box shadow and border for detailss */
+.detailss {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border: 1px solid #ddd; /* Light border */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #prodd {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .left,
+    .detailss {
+        width: 100%; /* Full width on smaller screens */
+        margin-right: 0; /* Remove right margin */
+        position: static; /* Reset position for stacking */
+        top: auto; /* Reset top position */
+    }
+
+    /* Adjust top margin for detailss */
+    .detailss {
+        margin-top: 20px;
+    }
+}
+
+/*ends single products*/
+
+/*Blog page starts
+*/
+.hero2 {
+    background: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/banner/b19.jpg);
+    height: 40dvh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    flex-direction: column;
+}
+
+.hero2 h2 {
+    color: #fff;
+    font-family: "Alegreya", sans-serif;
+}
+
+.hero2 p {
+    font-family: "Alegreya", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    font-style: normal;
+}
+
+.hero2 span {
+    font-family: "Alegreya", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #3d9cc5;
+}
+
+#blog {
+    padding: 150px 150px 0 150px;
+}
+
+#blog .box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+    padding-bottom: 90px; /* Make sure the box takes full width of its container */
+}
+
+#blog .right {
+    flex: 1; /* Allow right section to take equal space */
+    padding: 20px;
+}
+
+#blog .left {
+    flex: 1; /* Allow left section to take equal space */
+    padding: 20px;
+}
+
+#blog .left h4 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+#blog .left p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#blog .left a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#blog h1 {
+    margin-left: 20px;
+    font-size: 24px;
+}
+#blog .right{
+    width: 50%;
+    margin-right: 40px
+    
+}
+#blog img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#blog .right{
+    width: 50%;
+}
+#blog a {
+    text-decoration: none;
+    color: #000;
+    font-size: 11px;
+    position: relative;
+    font-weight: 700;
+    transition:all 0.3s;
+}
+#blog a::after {
+    content: "";
+    width: 50px;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    top: 4.7px;
+    right: -60px;
+}
+#blog a:hover{
+    color: #088178;
+}
+#blog a:hover::after{
+    background-color: #088178;
+}
+#blog h1{
+ position: absolute;
+    top: -28px;
+    left: 0px;
+    font-size: 70px;
+    font-weight: 700;
+    color: #c9cbce;
+    z-index: -8;
+
+}
+#foott{
+    color: black;
+}
+
+
+
+
+
+/* blog page ends*/
+
+/*About page starts*/
+
+.hero3 {
+    background: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/about/banner.png);
+    height: 40dvh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    flex-direction: column;
+}
+
+.hero3 h2 {
+    color: #fff;
+}
+
+/* Ensure the about1 section is positioned correctly */
+/* Ensure the about1 section is positioned correctly */
+#about1 {
+    padding: 50px 0; /* Adjust padding as needed */
+    background-color: #f2f2f2; /* Example background color */
+}
+
+/* Flexbox container for about content */
+.about-content {
+    display: flex;
+    justify-content: space-between; /* Align items with space between */
+    align-items: center; /* Align items vertically */
+    max-width: 1200px; /* Example max-width */
+    margin: 0 auto; /* Center align horizontally */
+    padding: 0 20px; /* Adjust padding as needed */
+}
+
+/* Right side image */
+.right {
+    flex: 1; /* Take remaining space */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Left side content */
+.left {
+    flex: 1; /* Take remaining space */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .left,
+    .right {
+        flex: auto; /* Adjust flex property for responsiveness */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+#about1 img{
+    width: 100%;
+    height: auto;
+}
+#about1 .left p{
+    color: #000;
+  
+    font-size:18px;
+    font-family: "Raleway", sans-serif;
+}
+.about_app{
+    text-align: center;
+    padding-top: 50px;
+}
+.about_app .video{
+    width: 70%;
+    top: 100%;
+    margin-top: 30px;
+    margin: 30px auto 0 auto;
+}
+video{
+    width: 100%;
+    height: 100%;
+border-radius: 20px;
+box-shadow: 3px 3px 3px #000;
+}
+
+/*contact page starts*/
+.hero4{
+
+    background: url(https://raw.githubusercontent.com/tech2etc/Build-and-Deploy-Ecommerce-Website/7bf0a6a00c79e37d97a953ed62f47197cd567ed3/img/about/banner.png);
+    height: 40dvh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    flex-direction: column;
+}
+.hero4 h2{
+    color: #fff;
+}
+
+.left p{
+    color: #000;
+}
+.left .left{
+    width: 40%;
+}
+.left span,
+#formm span{
+    font-size: 12px;
+}
+.left h2{
+    font-size: 26px;
+    line-height: 35px;
+    padding: 20px 0;
+}
+.left h3{
+    font-size: 15px;
+    
+    padding-bottom: 15px;
+}
+.left li{
+    list-style: none;
+    display: flex;
+    
+    flex-direction: row;
+    padding: 10px 0;
+}
+.left i{
+    font-size: 14px;
+    padding-right: 22px;
+}
+.left p{
+    margin: 0;
+    font-size: 14px;
+
+}
+.right_map {
+    width: 55%;
+    height: 440px;
+}
+.right_map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+#formm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Example height; adjust as needed */
+}
+
+.formmw {
+    width: 80%; /* Adjust width as needed */
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.formmw form {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center;
+}
+
+.formmw form span {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.formmw form h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formmw form input[type="text"],
+.formmw form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.formmw form textarea {
+    height: 150px;
+    width: 50%; /* Example height; adjust as needed */
+}
+
+.formmw form button {
+    background-color: #088178;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formmw form button:hover {
+    background-color: #065b4c;
+}
+
+
+
+
+
+
+/* contact page emds*/
+
+/*cart page*/
+#cart table {
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap;
+    border-collapse: collapse;
+
+}
+ #cart table img{
+    width: 70px;
+}
+ #cart table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+ #cart table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+ #cart table td:nth-child(4){
+    width: 150px;
+    text-align: center;
+}
+ #cart table td:nth-child(5), table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
+ #cart table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+#cart table thead{
+    border: 1px solid #e2e9e1;
+    border-left:  none;
+    border-right: none;
+}
+ #cart table thead td{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 18px 0;
+}
+ #cart table tbody tr td{
+    padding-top: 15px;
+}
+#cart table tbody  td{
+    font-size: 13px;
+    font-weight: 550;
+
+}
+#det{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.coupon{
+    width: 10%;
+    margin-bottom: 30px;
+
+}
+#coupon h3{
+    padding-bottom: 15px;
+}
+.coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 30%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+} .coupon {
+    width: 30%; /* Adjust width as needed */
+    margin-bottom: 30px;
+}
+
+.coupon h3 {
+    padding-bottom: 15px;
+}
+
+.coupon .in {
+    display: flex;
+    align-items: center;
+}
+
+.coupon input {
+    padding: 15px 20px;
+    outline: none;
+    width: calc(100% - 140px); /* Adjust width to leave space for button */
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+    font-size: 14px; /* Example font size */
+    height: 40px; /* Set the height to match the button */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+}
+
+
+
+
+
+#coupon button {
+    padding: 10px 20px;
+    background-color: #088178;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#coupon button:hover {
+    background-color: #065b4c;
+}
+
+.subtotal {
+    width: 40%; /* Adjust width as needed */
+}
+
+.subtotal h3 {
+    padding-bottom: 15px;
+}
+
+.subtotal table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Example margin */
+}
+
+.subtotal table tr {
+    border-bottom: 1px solid #e2e9e1;
+}
+
+.subtotal table td {
+    padding: 10px 0;
+    text-align: left;
+    font-size: 14px; /* Example font size */
+}
+
+.subtotal table td:nth-child(2) {
+    text-align: right;
+}
+
+.subtotal table td:first-child {
+    width: 150px; /* Adjust width as needed */
+}
+
+.subtotal table td:last-child {
+    font-weight: bold;
+}
+.coupon .in input[type="text"] {
+    padding: 12px 20px; /* Adjust padding to match button */
+    line-height: 36px; /* Match line-height with button */
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
+.subtotal button a {
+    text-decoration: none;
+    color: #fff;
+    gap: 2rem;
+    align-items: center;
+
+}

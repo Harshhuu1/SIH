@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be a Mentor</title>
+    <link rel="stylesheet" href="./be_mentor.css">
+</head>
+<body>
+    <div class="center" id="register-visual">
+        <h2 id="registering-text">Registering you as a mentor...</h2>
+        <!-- Bouncing Balls -->
+        <div class="ball-container">
+            <div class="ball" id="ball1"></div>
+            <div class="ball" id="ball2"></div>
+            <div class="ball" id="ball3"></div>
+        </div>
+    </div>
+
+    <!-- Mentor Profile Card displayed after registration -->
+    <div id="mentor-profile-container" class="hidden">
+        <div class="mentor-profile-card">
+            <img src="mentor-profile.jpg" alt="Mentor Profile" class="mentor-photo">
+            <div class="mentor-info">
+                <h3>Congratulations, you are now a Mentor!</h3>
+                <p>Your profile has been successfully created. Other users can now match with you based on your expertise.</p>
+                <div class="mentor-details">
+                    <p><strong>Name:</strong> Jane Doe</p>
+                    <p><strong>Expertise:</strong> Web Development, JavaScript, React</p>
+                    <p><strong>Email:</strong> jane.doe@example.com</p>
+                    <p><strong>LinkedIn:</strong> <a href="https://linkedin.com">View Profile</a></p>
+                </div>
+                <button class="message-btn">View Matches</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+    // Simulate the mentor registration process
+    setTimeout(function() {
+        // Hide the initial "Registering as mentor" text and bouncing balls
+        document.getElementById('register-visual').classList.add('hidden');
+        
+        // Show the mentor profile card
+        document.getElementById('mentor-profile-container').classList.remove('hidden');
+    }, 5000); // 5 seconds to simulate registration process
+};
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+    color: #004080;
+}
+
+p {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+.guidance{
+    color: black;
+}
+/* Mentorship Section */
+.mentorship {
+    display: flex;
+    justify-content: space-between;
+    
+    padding: 5rem 2rem;
+    background-color: #f4f4f4;
+}
+
+.content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.buttons a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    margin-left: 0rem;
+    background-color: #004080;
+    color: white;
+    border-radius: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.buttons a:hover{
+    background-color: rgba(255, 208, 0, 0.801);
+    color:#004080
+}
+
+.carousel img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+/* Trending Domains Section */
+.trending-domains {
+    padding: 2rem;
+    text-align: center;
+}
+
+.trending-domains h2 {
+    font-size: 2rem;
+}
+
+.domains a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    color: #004080;
+    transition: all 0.3s ease;
+}
+.domains a:hover{
+    box-shadow: inset;
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Top Mentors Section */
+.top-mentors {
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.mentor-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.mentor-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.mentor-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.mentor-info h3 {
+    font-size: 1.2rem;
+    color: #004080;
+    margin: 1rem 0;
+}
+
+.mentor-info p {
+    font-size: 0.9rem;
+}
+
+.view-profile {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #004080;
+    font-weight: bold;
+}
+
+/* Mentee Reviews Section */
+.mentee-reviews {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    text-align: center;
+}
+
+.mentee-reviews h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #004080;
+}
+
+.reviews-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.review-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-10px);
+}
+
+.mentee-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.review-text h3 {
+    font-size: 1.3rem;
+    color: #004080;
+    margin-bottom: 0.5rem;
+}
+
+.rating span {
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+
+/* Statistics Section */
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: #004080;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* FAQ Section */
+.faq {
+    padding: 2rem 1.5rem;
+    background: linear-gradient(to right, #e0f7fa, #fdf3e6);
+    /* Light blue to very light golden gradient */
+    border-radius: 10px;
+    margin: 3rem auto;
+    max-width: 800px;
+    /* Reduced width */
+    position: relative;
+    /* For the grain effect */
+    overflow: hidden;
+    /* Ensure the grain texture does not spill out */
+}
+
+.faq::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    /* Grainy texture */
+    opacity: 0.05;
+    /* Very subtle grain effect */
+    pointer-events: none;
+    /* Allow interaction with the content */
+}
+
+.faq h2 {
+    font-size: 1.6rem;
+    /* Reduced font size */
+    color: #d4af37;
+    /* Golden color */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.accordion {
+    background-color: #f0f8ff;
+    /* Very light blue */
+    color: #d4af37;
+    /* Golden color */
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 0.85rem;
+    /* Further reduced font size */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 0.4rem;
+    /* Spacing between items */
+}
+
+.accordion:hover {
+    background-color: #e0f7fa;
+    /* Slightly brighter light blue */
+}
+
+.panel {
+    padding: 0 0.5rem;
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel p {
+    margin: 1rem 0;
+    color: #666;
+    font-size: 0.75rem;
+    padding:0;
+}
+
+/* Accordion Active State */
+.accordion.active,
+.accordion:after {
+    background-color: #e0f7fa;
+    /* Light blue */
+    color: #004080;
+}
+
+.accordion:after {
+    content: '\002B';
+    /* Plus sign */
+    font-size: 1.2rem;
+    color: #d4af37;
+    /* Golden color */
+    float: right;
+}
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -10px;
+    /* Adjusted to reduce gap */
+    margin-bottom: 10px;
+}
+
+.marquee img {
+    width: 150px;
+    height: auto;
+    margin: 0 30px;
+    /* Adjusted to make images closer */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.7s ease-in-out;
+}
+
+.marquee img:hover {
+    transform: scale(1.1);
+}
+
+.marquee {
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 5rem;
+}
+.brandPartners{
+    font-size: 2rem;
+    margin-top:2rem;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding: 20px 100px;
+    top: 0;
+    position: fixed;
+    left: 0;
+    height: 4rem;
+    background-color: #ffffff;
+    width: 90%;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #beb8b8;
+    user-select: none;
+}
+
+.navigation a  {
+    font-family: "Nunito Sans", sans-serif;
+    position: relative;
+    font-size: 1.1rem;
+    color: #023047;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.loginbtn {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #eee6e6;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #000000;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.loginbtn:hover {
+    background: #ffb703;
+    color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.navigation a::after {
+    content: '';
+    bottom: -6px;
+    transform: scaleX(0);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    transform-origin: right;
+    height: 3px;
+    background: #000000;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 2rem;
+    flex-wrap: wrap;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    color: #000;
+    
+
+}
+.col .logo{
+    margin-bottom: 30px;
+}
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 14px;
+    color: #000;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #222;
+    text-decoration: none;
+}
+.follow{
+    margin-top: 20px;
+}
+.follow i{
+    color: #222;
+    cursor: pointer;
+    padding-right: 4px;
+}
+.row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+    margin: 10px 0 15px 0;
+}
+footer i:hover{
+    color: #088178;
+}
+.logo img {
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: #beb8b8;
+    user-select: none;
+}
+footer .row{
+    width: 10rem;
+}
+.col .install{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer a:hover{
+    color: #088178;
+}
+footer .foot{
+    width: 90%;
+    text-align: center;
+}
